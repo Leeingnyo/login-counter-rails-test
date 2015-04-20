@@ -137,6 +137,7 @@
         1,
         1,
         1,
+        1,
         null,
         null,
         null,
@@ -282,6 +283,10 @@
         0,
         0,
         null,
+        null,
+        1,
+        1,
+        null,
         null
       ],
       "/home/glglgozz/login-counter-rails-test/app/controllers/application_controller.rb": [
@@ -316,6 +321,6 @@
         null
       ]
     },
-    "timestamp": 1429527894
+    "timestamp": 1429528203
   }
 }

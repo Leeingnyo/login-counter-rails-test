@@ -56,7 +56,7 @@ class UsersControllerTest < ActionController::TestCase
   end
 
   test '#user_count' do
-    post :user_count
+    get :user_count
     json = JSON.parse(response.body)
     assert json['user_count'] == 2
   end

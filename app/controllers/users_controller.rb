@@ -65,4 +65,8 @@ class UsersController < ApplicationController
     params[:counter] = counter
     params.permit(:username, :password, :counter)
   end
+
+  def user_count
+    render :json => { user_count: User.all.count }
+  end
 end
