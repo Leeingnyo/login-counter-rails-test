@@ -1,11 +1,13 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
 one:
-  username: MyString
-  password: MyString
-  counter: 1
+  username: Romeo
+  # password: ilovejuliet
+  password_digest: <%= BCrypt::Password.create("ilovejuliet") %>
+  counter: 100
 
 two:
-  username: MyString
-  password: MyString
+  username: Juliet
+  # password: ihateromeo
+  password_digest: <%= BCrypt::Password.create("ihateromeo") %>
   counter: 1
