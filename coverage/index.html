@@ -14,7 +14,7 @@
       <img src="./assets/0.10.0/loading.gif" alt="loading"/>
     </div>
     <div id="wrapper" style="display:none;">
-      <div class="timestamp">Generated <abbr class="timeago" title="2015-04-20T19:44:43+09:00">2015-04-20T19:44:43+09:00</abbr></div>
+      <div class="timestamp">Generated <abbr class="timeago" title="2015-04-20T19:48:51+09:00">2015-04-20T19:48:51+09:00</abbr></div>
       <ul class="group_tabs"></ul>
 
       <div id="content">
@@ -25,7 +25,7 @@
      covered at
      <span class="covered_strength">
        <span class="green">
-         1.05
+         1.2
        </span>
     </span> hits/line)
   </h2>
@@ -67,7 +67,7 @@
         <td>42</td>
         <td>27</td>
         <td>15</td>
-        <td>1.2</td>
+        <td>1.5</td>
       </tr>
       
       <tr>
@@ -436,20 +436,20 @@
           <code class="ruby">  def signup</code>
         </li>
       
-        <li class="covered" data-hits="4" data-linenumber="24">
-          <span class="hits">4</span>
+        <li class="covered" data-hits="5" data-linenumber="24">
+          <span class="hits">5</span>
           
           <code class="ruby">    @user = User.new(user_params)</code>
         </li>
       
-        <li class="covered" data-hits="4" data-linenumber="25">
-          <span class="hits">4</span>
+        <li class="covered" data-hits="5" data-linenumber="25">
+          <span class="hits">5</span>
           
           <code class="ruby">    @user.counter = 1</code>
         </li>
       
-        <li class="covered" data-hits="4" data-linenumber="26">
-          <span class="hits">4</span>
+        <li class="covered" data-hits="5" data-linenumber="26">
+          <span class="hits">5</span>
           
           <code class="ruby">    if @user.save</code>
         </li>
@@ -472,8 +472,8 @@
           <code class="ruby">    else</code>
         </li>
       
-        <li class="covered" data-hits="3" data-linenumber="30">
-          <span class="hits">3</span>
+        <li class="covered" data-hits="4" data-linenumber="30">
+          <span class="hits">4</span>
           
           <code class="ruby">      error_flag = [false, false, false]</code>
         </li>
@@ -484,26 +484,26 @@
           <code class="ruby">      </code>
         </li>
       
-        <li class="covered" data-hits="3" data-linenumber="32">
-          <span class="hits">3</span>
+        <li class="covered" data-hits="4" data-linenumber="32">
+          <span class="hits">4</span>
           
           <code class="ruby">      if @user.errors.include?(:username)</code>
         </li>
       
-        <li class="covered" data-hits="2" data-linenumber="33">
-          <span class="hits">2</span>
+        <li class="covered" data-hits="3" data-linenumber="33">
+          <span class="hits">3</span>
           
           <code class="ruby">        @user.errors.get(:username).each do |e|</code>
         </li>
       
-        <li class="covered" data-hits="2" data-linenumber="34">
-          <span class="hits">2</span>
+        <li class="covered" data-hits="3" data-linenumber="34">
+          <span class="hits">3</span>
           
           <code class="ruby">          error_flag[0] = true if e.include? &#39;is too&#39;</code>
         </li>
       
-        <li class="covered" data-hits="2" data-linenumber="35">
-          <span class="hits">2</span>
+        <li class="covered" data-hits="3" data-linenumber="35">
+          <span class="hits">3</span>
           
           <code class="ruby">          error_flag[2] = true if e.include? &#39;already been taken&#39;</code>
         </li>
@@ -526,8 +526,8 @@
           <code class="ruby">      </code>
         </li>
       
-        <li class="covered" data-hits="3" data-linenumber="39">
-          <span class="hits">3</span>
+        <li class="covered" data-hits="4" data-linenumber="39">
+          <span class="hits">4</span>
           
           <code class="ruby">      if @user.errors.include?(:password)</code>
         </li>
@@ -550,20 +550,20 @@
           <code class="ruby">      </code>
         </li>
       
-        <li class="covered" data-hits="3" data-linenumber="43">
-          <span class="hits">3</span>
+        <li class="covered" data-hits="4" data-linenumber="43">
+          <span class="hits">4</span>
           
           <code class="ruby">      render :json =&gt; { error_code: -1 } and return if error_flag[0]</code>
         </li>
       
-        <li class="covered" data-hits="2" data-linenumber="44">
-          <span class="hits">2</span>
+        <li class="covered" data-hits="3" data-linenumber="44">
+          <span class="hits">3</span>
           
           <code class="ruby">      render :json =&gt; { error_code: -2 } and return if error_flag[1]</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="45">
-          <span class="hits">1</span>
+        <li class="covered" data-hits="2" data-linenumber="45">
+          <span class="hits">2</span>
           
           <code class="ruby">      render :json =&gt; { error_code: -3 } and return if error_flag[2]</code>
         </li>
@@ -658,8 +658,8 @@
           <code class="ruby">  def user_params</code>
         </li>
       
-        <li class="covered" data-hits="4" data-linenumber="61">
-          <span class="hits">4</span>
+        <li class="covered" data-hits="5" data-linenumber="61">
+          <span class="hits">5</span>
           
           <code class="ruby">    params.permit(:username, :password)</code>
         </li>
